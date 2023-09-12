@@ -18,3 +18,5 @@ bugs - 7 min
 testando 10 min
 
 ------
+
+Nas minhas contas deu exatamente o tempo que planejei incrivelmente kkkk
