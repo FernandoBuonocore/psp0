@@ -17,17 +17,19 @@ public class Main {
         System.out.println("Caso queira sair do sistema, digite '0' (zero): ");
 
         while(true) {
-            int number = 0;
+            double number = 0;
+            boolean error = false;
 
             try {
-                number = scanner.nextInt();
+                number = scanner.nextDouble();
+                System.out.println("Você digitou o número: " + number);
             } catch(InputMismatchException e){
                 System.out.println("Valor deve ser um numero apenas!!! ");
+                error = true;
+                scanner.next();
             }
 
-            System.out.println("Você digitou o número: " + number);
-
-            if(number == 0){
+            if(!error && number == 0){
                 break;
             }
 
